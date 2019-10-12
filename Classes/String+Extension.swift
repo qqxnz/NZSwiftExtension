@@ -30,19 +30,19 @@ extension String {
     }
     
     
-    /**获取字符串的md5值*/
-    func nz_md5() -> String {
-        let cStrl = self.cString(using: String.Encoding.utf8);
-        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16);
-        CC_MD5(cStrl, CC_LONG(strlen(cStrl!)), buffer);
-        var md5String = "";
-        for idx in 0...15 {
-            let obcStrl = String.init(format: "%02x", buffer[idx]);
-            md5String.append(obcStrl);
-        }
-        free(buffer);
-        return md5String;
-    }
+//    /**获取字符串的md5值*/
+//    func nz_md5() -> String {
+//        let cStrl = self.cString(using: String.Encoding.utf8);
+//        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16);
+//        CC_MD5(cStrl, CC_LONG(strlen(cStrl!)), buffer);
+//        var md5String = "";
+//        for idx in 0...15 {
+//            let obcStrl = String.init(format: "%02x", buffer[idx]);
+//            md5String.append(obcStrl);
+//        }
+//        free(buffer);
+//        return md5String;
+//    }
     
     
     /// 获取汉字字符串首字母(简易)
