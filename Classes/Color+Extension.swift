@@ -9,7 +9,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
     /**
      16进制转UIColor

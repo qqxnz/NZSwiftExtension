@@ -14,7 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print(Date.init().nz_year())
+        self.view.backgroundColor = UIColor.white
+    
+        let lab = UILabel.init(frame: CGRect.init(x: 50, y: 100, width: 200, height: 50.0))
+        lab.text = "UILabel增加下划线"
+        lab.nz_underline()
+        self.view.addSubview(lab)
+        
+        
+        print("123456".nz_md5())
         
         
         

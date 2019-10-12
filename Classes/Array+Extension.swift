@@ -9,7 +9,7 @@
 
 import Foundation
 
-extension Array where Element: Equatable {
+public extension Array where Element: Equatable {
     
     /// 删除数组中的某个数据
     /// - Parameter obj: 要删除的数据

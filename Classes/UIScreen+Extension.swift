@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIScreen {
+public extension UIScreen {
     
     /// 是否为IPHONE X 类型的刘海屏
     func isXScreen() -> Bool{

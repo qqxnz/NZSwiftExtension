@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     ///增加下划线
     func nz_underline(){
         if let textString = self.text {

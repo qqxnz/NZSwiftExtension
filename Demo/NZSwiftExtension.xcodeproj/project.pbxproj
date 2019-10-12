@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A996F6C12351A9770018FC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F6C02351A9770018FC7A /* AppDelegate.swift */; };
-		A996F6C32351A9770018FC7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F6C22351A9770018FC7A /* SceneDelegate.swift */; };
 		A996F6C52351A9770018FC7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F6C42351A9770018FC7A /* ViewController.swift */; };
-		A996F6C82351A9770018FC7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A996F6C62351A9770018FC7A /* Main.storyboard */; };
 		A996F6CA2351A9790018FC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A996F6C92351A9790018FC7A /* Assets.xcassets */; };
 		A996F6CD2351A9790018FC7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A996F6CB2351A9790018FC7A /* LaunchScreen.storyboard */; };
 		A996F6D82351A9790018FC7A /* NZSwiftExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F6D72351A9790018FC7A /* NZSwiftExtensionTests.swift */; };
@@ -50,9 +48,7 @@
 /* Begin PBXFileReference section */
 		A996F6BD2351A9770018FC7A /* NZSwiftExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZSwiftExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A996F6C02351A9770018FC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A996F6C22351A9770018FC7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A996F6C42351A9770018FC7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A996F6C72351A9770018FC7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A996F6C92351A9790018FC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A996F6CC2351A9790018FC7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A996F6CE2351A9790018FC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,9 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				A996F6C02351A9770018FC7A /* AppDelegate.swift */,
-				A996F6C22351A9770018FC7A /* SceneDelegate.swift */,
 				A996F6C42351A9770018FC7A /* ViewController.swift */,
-				A996F6C62351A9770018FC7A /* Main.storyboard */,
 				A996F6C92351A9790018FC7A /* Assets.xcassets */,
 				A996F6CB2351A9790018FC7A /* LaunchScreen.storyboard */,
 				A996F6CE2351A9790018FC7A /* Info.plist */,
@@ -285,7 +279,6 @@
 			files = (
 				A996F6CD2351A9790018FC7A /* LaunchScreen.storyboard in Resources */,
 				A996F6CA2351A9790018FC7A /* Assets.xcassets in Resources */,
-				A996F6C82351A9770018FC7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +318,6 @@
 				A996F7082351A9C60018FC7A /* ViewController+Extension.swift in Sources */,
 				A996F6C12351A9770018FC7A /* AppDelegate.swift in Sources */,
 				A996F7042351A9C60018FC7A /* String+Extension.swift in Sources */,
-				A996F6C32351A9770018FC7A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A996F6C62351A9770018FC7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A996F6C72351A9770018FC7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A996F6CB2351A9790018FC7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -501,6 +485,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NZSwiftExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +506,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NZSwiftExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

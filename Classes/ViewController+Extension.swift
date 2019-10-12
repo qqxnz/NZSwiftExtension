@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     //、string to UIViewController Class
     func VCSTRING_TO_VIEWCONTROLLER(_ childControllerName: String) -> UIViewController? {
         // 1.获取命名空间

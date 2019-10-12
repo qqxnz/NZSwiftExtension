@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     /// 颜色转图片
     /// - Parameter color: 颜色
     static func nz_imageWithColor(_ color: UIColor) -> UIImage {

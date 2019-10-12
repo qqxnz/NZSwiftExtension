@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import CommonCrypto
 
 
-extension String {
+public extension String {
     
     
     /// 判断是否为空（全空格）
@@ -29,20 +30,19 @@ extension String {
         }
     }
     
-    
-//    /**获取字符串的md5值*/
-//    func nz_md5() -> String {
-//        let cStrl = self.cString(using: String.Encoding.utf8);
-//        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16);
-//        CC_MD5(cStrl, CC_LONG(strlen(cStrl!)), buffer);
-//        var md5String = "";
-//        for idx in 0...15 {
-//            let obcStrl = String.init(format: "%02x", buffer[idx]);
-//            md5String.append(obcStrl);
-//        }
-//        free(buffer);
-//        return md5String;
-//    }
+    /// 获取字符串的md5值
+    func nz_md5() -> String {
+        let cStrl = self.cString(using: String.Encoding.utf8);
+        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16);
+        CC_MD5(cStrl, CC_LONG(strlen(cStrl!)), buffer);
+        var md5String = "";
+        for idx in 0...15 {
+            let obcStrl = String.init(format: "%02x", buffer[idx]);
+            md5String.append(obcStrl);
+        }
+        free(buffer);
+        return md5String;
+    }
     
     
     /// 获取汉字字符串首字母(简易)
@@ -91,7 +91,7 @@ extension String {
 
 }
 
-extension String {
+public extension String {
     
     /// String to Int
     func nz_toIntValue() ->Int{
@@ -132,7 +132,7 @@ extension String {
     }
 }
 
-extension String{
+public extension String{
     /// 转拼音
     func nz_transformToPinYin()->String{
         let mutableString = NSMutableString(string: self)
@@ -169,7 +169,7 @@ extension String{
 
 }
 
-extension String {
+public extension String {
     /// 下标数字 0
     static var nz_zeroUnder: String {
         return "\u{2080}"

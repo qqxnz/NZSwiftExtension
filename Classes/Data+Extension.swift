@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Data {
+public extension Data {
     /// 打印Data数据16进制字符串
     ///
     /// - returns: `String` representation of this `Data` object.
