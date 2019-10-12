@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
     
     /// 1-9的数字前补0
     func nz_addZeroBeforeToString() -> String{

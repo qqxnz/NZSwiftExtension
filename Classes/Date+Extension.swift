@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Date {
+public extension Date {
     /// 返回年
     func nz_year() ->Int {
         let calendar = NSCalendar.current
@@ -140,11 +140,11 @@ extension Date {
 
 
 
-extension Date{
+public extension Date{
     
     /// 日期时间字符串转Date类型
     /// - Parameter dateStr: 时间字符串
-    /// - Parameter strFormat: dateStr的格式
+    /// - Parameter strFormat: dateStr的格式 举例:`yyyy-MM-dd HH:mm:ss`
     static func nz_fromString(dateStr:String,withFormat strFormat:String)->Date{
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
