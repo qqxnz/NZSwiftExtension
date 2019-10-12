@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NZSwiftExtension"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of NZSwiftExtension."
   spec.cocoapods_version = '>= 1.6.0'
 
